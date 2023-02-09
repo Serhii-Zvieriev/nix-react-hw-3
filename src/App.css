@@ -1,0 +1,38 @@
+.timer {
+  display: inline-block;
+  margin: 20px;
+  width: 350px;
+}
+.clockFace {
+  padding: 20px;
+  background-color: rgb(219, 192, 156);
+  text-align: center;
+
+  font-size: 26px;
+  color: rgb(33, 179, 130);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: bisque;
+}
+
+.btn:not(:last-child) {
+  margin-right: 10px;
+}
+.btn:hover {
+  filter: brightness(80%);
+}
+
+.lapTime {
+  padding-left: 20px;
+  font-size: 22px;
+  color: rgb(42, 136, 139);
+  background-color: rgb(233, 220, 201);
+}
+
+.container {
+  display: flex;
+}
