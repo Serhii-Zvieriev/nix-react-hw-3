@@ -12,8 +12,8 @@ import plunger from "../../sound/plunger.mp3";
 import { theme } from "../../helpers/createTheme";
 
 class Buttons extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
   }
 
   render() {
@@ -26,10 +26,10 @@ class Buttons extends Component {
     const { isStoping } = this.props;
     const { isReseting } = this.props;
 
-    сonst[startSound] = useSound(boop);
-    const [stopSound] = useSound(drums);
-    const [continueSound] = useSound(pfff);
-    const [resetSound] = useSound(plunger);
+    // сonst[startSound] = useSound(boop);
+    // const [stopSound] = useSound(drums);
+    // const [continueSound] = useSound(pfff);
+    // const [resetSound] = useSound(plunger);
 
     return (
       <div className="buttons">
@@ -40,10 +40,10 @@ class Buttons extends Component {
               color="green"
               className="btn"
               onClick={() => {
-                startSound();
+                // startSound();
                 handleClickStart();
               }}
-              disabled={isCounting}
+              disabled={this.props.isCounting}
             >
               Start
             </Button>
@@ -53,7 +53,7 @@ class Buttons extends Component {
               color="violet"
               className="btn"
               onClick={() => {
-                continueSound();
+                // continueSound();
                 handleClickContinue();
               }}
               disabled={isCounting}
@@ -66,7 +66,7 @@ class Buttons extends Component {
             color="red"
             className="btn"
             onClick={() => {
-              stopSound();
+              // stopSound();
               handleClickStop();
             }}
             disabled={isStoping}
@@ -78,7 +78,7 @@ class Buttons extends Component {
             color="orange"
             className="btn"
             onClick={() => {
-              resetSound();
+              // resetSound();
               handleClickReset();
             }}
             disabled={isReseting}

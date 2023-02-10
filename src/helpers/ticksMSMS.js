@@ -3,6 +3,8 @@ import { getPadTime, getPadTimeMSMS } from "./getPadTime";
 let startTime = new Date().getTime();
 
 export const tickMSMS = (arrTime) => {
+  console.log(arrTime);
+
   let MSMS = arrTime[3];
   let sec = arrTime[2];
   let minutes = arrTime[1];

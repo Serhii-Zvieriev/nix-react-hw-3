@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
 class LapTime extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
   }
 
   render() {
